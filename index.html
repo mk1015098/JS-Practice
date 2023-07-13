@@ -21,6 +21,7 @@
     <main>
       <div class="container">
         <section>
+          <p id="choice">ここに日時を表示します</p>
         </section>
       </div>
     </main>
@@ -30,5 +31,11 @@
         <p>JavaScript Samples</p>
       </div>
     </footer>
+
+    <script>
+    'use strict';
+    document.getElementById('choice').textContent = new Date();
+    console.log(document.getElementById('choice').textContent);
+    </script>
   </body>
 </html>
